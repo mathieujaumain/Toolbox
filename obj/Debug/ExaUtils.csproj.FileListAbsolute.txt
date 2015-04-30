@@ -1,0 +1,5 @@
+c:\users\mja\documents\visual studio 2012\Projects\ExaUtils\ExaUtils\obj\Debug\ExaUtils.csprojResolveAssemblyReference.cache
+C:\Users\mja\Documents\Visual Studio 2012\Projects\ExaUtils\ExaUtils\bin\Debug\Toolbox.dll
+C:\Users\mja\Documents\Visual Studio 2012\Projects\ExaUtils\ExaUtils\bin\Debug\Toolbox.pdb
+C:\Users\mja\Documents\Visual Studio 2012\Projects\ExaUtils\ExaUtils\obj\Debug\Toolbox.dll
+C:\Users\mja\Documents\Visual Studio 2012\Projects\ExaUtils\ExaUtils\obj\Debug\Toolbox.pdb
