@@ -1,0 +1,5 @@
+C:\Users\mja\Documents\GitHub\Toolbox\bin\Debug\Toolbox.dll
+C:\Users\mja\Documents\GitHub\Toolbox\bin\Debug\Toolbox.pdb
+C:\Users\mja\Documents\GitHub\Toolbox\obj\Debug\Toolbox.csprojResolveAssemblyReference.cache
+C:\Users\mja\Documents\GitHub\Toolbox\obj\Debug\Toolbox.dll
+C:\Users\mja\Documents\GitHub\Toolbox\obj\Debug\Toolbox.pdb

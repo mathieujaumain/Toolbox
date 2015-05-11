@@ -20,10 +20,10 @@ namespace MathieuJaumain.Tools.Tracking
         private bool _isTracking = false;
         private object _lock = new object();
 
-        public event EventHandler OnTrackingStart;
-        public event TurretKineticResultDelegate NewTrackingKineticOutputComputed;
-        public event TurretKineticResultDelegate NewTrackingStaticOutputComputed;
-        public event EventHandler OnTrackingStop;
+        public event EventHandler OnTrackingStart = delegate { };
+        public event TurretKineticResultDelegate NewTrackingKineticOutputComputed = delegate {};
+        public event TurretKineticResultDelegate NewTrackingStaticOutputComputed = delegate { };
+        public event EventHandler OnTrackingStop = delegate { };
 
         public void StartTracking()
         {
@@ -63,16 +63,15 @@ namespace MathieuJaumain.Tools.Tracking
 
         public DynamicBody2D Target
         {
-            get
-            {
-                lock(_lock) return _Target;
-            }
+            get { lock(_lock) return _Target; }
+            set { lock (_lock) _Target = value; }
         }
 
 
         public DynamicBody2D Camera
         {
             get { lock (_lock) return _Camera; }
+            set { lock (_lock) _Camera = value; }
         }
 
         public bool IsTracking

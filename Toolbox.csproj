@@ -56,7 +56,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tracking\AbstractTracker2D.cs" />
     <Compile Include="Tracking\PNTracking2D.cs" />
-    <Compile Include="Tracking\ProportionalNavigationTracking2D.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>

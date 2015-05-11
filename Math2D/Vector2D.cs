@@ -146,6 +146,15 @@ namespace MathieuJaumain.Tools.Math2D
             }
             return NULL_VECTOR;
         }
+
+        public Vector2D Rotated(double angle) // randian
+        {
+            if (!IsNull)
+            {
+                return new Vector2D( X * Math.Cos(angle) - Y * Math.Sin(angle), Y * Math.Cos(angle) + X * Math.Sin(angle));
+            }
+            return NULL_VECTOR;
+        }
     
     }
 }

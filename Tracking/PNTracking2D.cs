@@ -34,13 +34,13 @@ namespace MathieuJaumain.Tools.Tracking
             if (_PreviousCameraPos != null && _PreviousTargetPos != null )
             {
                 Vector2D previousLos = _PreviousTargetPos - _PreviousCameraPos;
-                double LOS_rate = previousLos.AngleTo(currentLos) / (elapsed * 1000) * (180 / Math.PI); // = degré par secondes
+                double LOS_rate = previousLos.AngleTo(currentLos) / (elapsed * 1000); // = rad par secondes
                 double PN = NAVIGATION_CONSTANT * LOS_rate;
 
-                double target2bearing = currentLos.AngleTo(cameraBearing) * (180 / Math.PI);
+                double target2bearing = currentLos.AngleTo(cameraBearing);
                 double correction = BEARING_CORRECTION_CONSTANT * target2bearing;
 
-                double newAzimutSpeed = PN - correction;
+                double newAzimutSpeed = Math.Sign(target2bearing) * PN - correction;
 
                 NewTrackingKineticOutputComputed(newAzimutSpeed, 0);
             }
